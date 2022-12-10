@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="fcm.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <img class="logo" src="img/cesurLogo.jpg">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a class="estar" href="utilidades.html">Utilidades</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="imc.html">Calculadora de IMC</a></li>
+                <li><a class="estarUT" href="fcm.html">Calculadora de FCM</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
+                <li><a href="horario.html">Horario</a></li>
+            </ul>
+        </aside>
+        <div class="contenido">
+            <div action="" method="get">
+                Edad <input type="text" name="edad" id="edad">
+
+                Sexo <select name="sexo" id="sexo">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+
+                <button onclick="calcularFCM()">Calcular</button>
+
+            </div>
+
+            <br>
+            <label>Resultado: </label><output id="resultado"></output><br>
+            <table class="tablaIMC">
+                <tbody>
+                    <tr>
+                        <td class="strongtext"><strong>Valores frecuencia cardiaca</strong></td>
+                    </tr>
+                    <tr id="type1">
+                        <td class="AltRow1"><br>-Zona de recuperación (60%-70%)</td>
+                    </tr>
+                    <tr id="type2">
+                        <td class="AltRow1">-Zona aeróbica (70%-80%)</td>
+                    </tr>
+                    <tr id="type3">
+                        <td class="AltRow1">-Zona anaeróbica (80%-90%)</td>
+                    </tr>
+                    <tr id="type4">
+                        <td class="AltRow1">-Línea roja (90%-100%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2022©</p>
+    </footer>
+</body>
+
+</html>

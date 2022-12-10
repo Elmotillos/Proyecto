@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="horario.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <img class="logo" src="img/cesurLogo.jpg">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a class="estar" href="horario.html">Utilidades</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="imc.html">Calculadora de IMC</a></li>
+                <li><a href="fcm.html">Calculadora de FCM</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
+                <li><a class="estarUT" href="horario.html">Horario</a></li>
+            </ul>
+        </aside>
+        <div class="contenido">
+
+            <div action="" method="get">
+
+                <button onclick="horarioMañana()">Horario mañana</button>
+                <button onclick="horarioTarde()">Horario tarde</button>
+
+            </div>
+
+            <br>
+            <p>Horario:
+                <span id="resultado"></span>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2022©</p>
+    </footer>
+</body>
+
+</html>

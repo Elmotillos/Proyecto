@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="imc.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <img class="logo" src="img/cesurLogo.jpg">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a class="estar" href="utilidades.html">Utilidades</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a class="estarUT" href="imc.html">Calculadora de IMC</a></li>
+                <li><a href="fcm.html">Calculadora de FCM</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
+                <li><a href="horario.html">Horario</a></li>
+            </ul>
+        </aside>
+        <div class="contenido">
+
+            <h1>Calculadora de Imc</h1>
+
+            <form action="">
+                <label>Altura</label><input id="altura" type="text" required="required">
+                <label>Peso</label><input id="peso" type="text" required="required">
+                <input type="button" onclick="calculoIMC()" value="Calcular">
+            </form>
+            <label>Resultado: </label><output id="resultado"></output>
+            <br><br>
+
+            <table class="tablaIMC">
+                <tbody>
+                <tbody>
+                    <tr>
+                        <td class="strongtext"><strong>Composición corporal</strong></td>
+                        <td class="strongtext"><strong>Índice de masa corporal (IMC)</strong></td>
+                    </tr>
+                    <tr id="type1">
+                        <td class="AltRow1">-Infrapeso(delgadez severa</td>
+                        <td class="AltRow1">Menos de 16</td>
+                    </tr>
+                    <tr id="type2">
+                        <td class="AltRow1">-Infrapeso(delgadez moderada)</td>
+                        <td class="AltRow1">16.00 - 16.99</td>
+                    </tr>
+                    <tr id="type3">
+                        <td class="AltRow1">-Infrapeso (delgadez aceptable)</td>
+                        <td class="AltRow1">17.00 - 18.49</td>
+                    </tr>
+                    <tr id="type4">
+                        <td class="AltRow1">Peso normal</td>
+                        <td class="AltRow1">18.50 -24.99</td>
+                    </tr>
+                    <tr id="type5">
+                        <td class="AltRow1">Sobrepeso</td>
+                        <td class="AltRow1">25.00 -29.99</td>
+                    </tr>
+                    <tr id="type6">
+                        <td class="AltRow1">-Obeso (Tipo I)</td>
+                        <td class="AltRow1">30.00 - 34.99</td>
+                    </tr>
+                    <tr id="type7">
+                        <td class="AltRow1">-Obeso (Tipo II)</td>
+                        <td class="AltRow1">35.00 - 40.00</td>
+                    </tr>
+                    <tr id="type8">
+                        <td class="AltRow1">-Obeso (Tipo III)</td>
+                        <td class="AltRow1">>40.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2022©</p>
+    </footer>
+</body>
+
+</html>
